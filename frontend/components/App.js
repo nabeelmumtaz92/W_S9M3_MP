@@ -7,7 +7,7 @@ import Navbar from "./Navbar"
 
 const App = () => {
   const [coinData, setCoinData] = useState([])
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useDarkMode(false)
 
   useEffect(() => {
     axios
